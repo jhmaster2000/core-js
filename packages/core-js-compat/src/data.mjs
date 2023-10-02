@@ -1871,8 +1871,6 @@ export const data = {
     rhino: '1.7.13',
     safari: '10.0',
   },
-  // TODO: Remove from `core-js@4`
-  'esnext.aggregate-error': null,
   'esnext.suppressed-error.constructor': {
   },
   'esnext.array.from-async': {
@@ -2585,7 +2583,6 @@ export const renamed = new Map([
   ['esnext.array.to-sorted', 'es.array.to-sorted'],
   ['esnext.array.to-spliced', 'es.array.to-spliced'],
   ['esnext.array.with', 'es.array.with'],
-  ['esnext.aggregate-error', 'es.aggregate-error'],
   ['esnext.global-this', 'es.global-this'],
   ['esnext.object.has-own', 'es.object.has-own'],
   ['esnext.promise.all-settled', 'es.promise.all-settled'],
