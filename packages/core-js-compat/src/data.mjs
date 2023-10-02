@@ -2242,8 +2242,6 @@ export const data = {
   'esnext.string.match-all': null,
   // TODO: Remove from `core-js@4`
   'esnext.string.replace-all': null,
-  // TODO: Remove from `core-js@4`
-  'esnext.string.to-well-formed': null,
   'esnext.symbol.async-dispose': {
     deno: '1.38',
     // Node 20.4.0 add `Symbol.asyncDispose`, but with incorrect descriptor
@@ -2542,7 +2540,6 @@ export const renamed = new Map([
   ['es.weak-set', 'es.weak-set.constructor'],
   ['esnext.string.match-all', 'es.string.match-all'],
   ['esnext.string.replace-all', 'es.string.replace-all'],
-  ['esnext.string.to-well-formed', 'es.string.to-well-formed'],
   ['web.url', 'web.url.constructor'],
   ['web.url-search-params', 'web.url-search-params.constructor'],
 ]);
