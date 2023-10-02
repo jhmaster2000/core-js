@@ -2115,8 +2115,6 @@ export const data = {
   'esnext.number.range': {
   },
   // TODO: Remove from `core-js@4`
-  'esnext.object.has-own': null,
-  // TODO: Remove from `core-js@4`
   'esnext.object.iterate-entries': {
   },
   // TODO: Remove from `core-js@4`
@@ -2544,7 +2542,6 @@ export const renamed = new Map([
   ['es.set', 'es.set.constructor'],
   ['es.weak-map', 'es.weak-map.constructor'],
   ['es.weak-set', 'es.weak-set.constructor'],
-  ['esnext.object.has-own', 'es.object.has-own'],
   ['esnext.string.is-well-formed', 'es.string.is-well-formed'],
   ['esnext.string.match-all', 'es.string.match-all'],
   ['esnext.string.replace-all', 'es.string.replace-all'],
