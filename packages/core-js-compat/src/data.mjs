@@ -1986,8 +1986,6 @@ export const data = {
   // TODO: Remove from `core-js@4`
   'esnext.function.un-this': {
   },
-  // TODO: Remove from `core-js@4`
-  'esnext.global-this': null,
   'esnext.iterator.constructor': {
   },
   // TODO: Remove from `core-js@4`
@@ -2546,7 +2544,6 @@ export const renamed = new Map([
   ['es.set', 'es.set.constructor'],
   ['es.weak-map', 'es.weak-map.constructor'],
   ['es.weak-set', 'es.weak-set.constructor'],
-  ['esnext.global-this', 'es.global-this'],
   ['esnext.object.has-own', 'es.object.has-own'],
   ['esnext.string.is-well-formed', 'es.string.is-well-formed'],
   ['esnext.string.match-all', 'es.string.match-all'],
