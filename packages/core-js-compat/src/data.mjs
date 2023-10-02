@@ -2114,9 +2114,6 @@ export const data = {
   // TODO: Remove from `core-js@4`
   'esnext.number.range': {
   },
-  // TODO: Remove from `core-js@4`
-  'esnext.object.iterate-values': {
-  },
   'esnext.object.group-by': {
     chrome: '117',
     firefox: '119',
