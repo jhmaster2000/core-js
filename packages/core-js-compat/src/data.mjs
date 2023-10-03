@@ -2073,9 +2073,6 @@ export const data = {
   },
   'esnext.observable.of': {
   },
-  // TODO: Remove from `core-js@4`
-  'esnext.promise.try': {
-  },
   'esnext.promise.with-resolvers': {
     bun: '0.7.1',
     chrome: '119',
