@@ -1960,9 +1960,6 @@ export const data = {
   },
   'esnext.iterator.constructor': {
   },
-  // TODO: Remove from `core-js@4`
-  'esnext.iterator.as-indexed-pairs': {
-  },
   'esnext.iterator.dispose': {
   },
   'esnext.iterator.drop': {
