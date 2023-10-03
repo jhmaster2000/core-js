@@ -1976,8 +1976,6 @@ export const data = {
   },
   'esnext.iterator.from': {
   },
-  'esnext.iterator.indexed': {
-  },
   'esnext.iterator.map': {
   },
   'esnext.iterator.range': {
