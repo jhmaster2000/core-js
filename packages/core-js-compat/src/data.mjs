@@ -1920,8 +1920,6 @@ export const data = {
   },
   'esnext.async-iterator.from': {
   },
-  'esnext.async-iterator.indexed': {
-  },
   'esnext.async-iterator.map': {
   },
   'esnext.async-iterator.reduce': {
