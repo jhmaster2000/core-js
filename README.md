@@ -1425,7 +1425,7 @@ for (let key in object2) console.log(key); // nothing
 #### ECMAScript: Collections[⬆](#index)
 `core-js` uses native collections in most case, just fixes methods / constructor, if it's required, and in old environment uses fast polyfill (O(1) lookup).
 #### Map[⬆](#index)
-Module [`es.map`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.map.js).
+Module [`es.map.constructor`](https://github.com/zloirock/core-js/blob/master/packages/core-js/modules/es.map.constructor.js).
 ```js
 class Map {
   constructor(iterable?: Iterable<[key, value]>): Map;
