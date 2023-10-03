@@ -2051,9 +2051,6 @@ export const data = {
   },
   'esnext.number.from-string': {
   },
-  // TODO: Remove from `core-js@4`
-  'esnext.number.range': {
-  },
   'esnext.object.group-by': {
     chrome: '117',
     firefox: '119',
