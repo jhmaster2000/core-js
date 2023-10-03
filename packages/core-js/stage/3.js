@@ -12,7 +12,6 @@ require('../proposals/json-parse-with-source');
 require('../proposals/promise-with-resolvers');
 require('../proposals/set-methods-v2');
 // TODO: Obsolete versions, remove from `core-js@4`
-require('../proposals/change-array-by-copy');
 require('../proposals/iterator-helpers-stage-3');
 
 module.exports = parent;
