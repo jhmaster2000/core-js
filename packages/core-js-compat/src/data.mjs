@@ -2113,7 +2113,7 @@ export const data = {
   },
   'esnext.set.symmetric-difference': {
   },
-  'esnext.set.union.v2': {
+  'esnext.set.union': {
   },
   'esnext.string.cooked': {
   },
