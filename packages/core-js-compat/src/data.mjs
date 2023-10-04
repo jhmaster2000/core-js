@@ -2111,7 +2111,7 @@ export const data = {
   },
   'esnext.set.some': {
   },
-  'esnext.set.symmetric-difference.v2': {
+  'esnext.set.symmetric-difference': {
   },
   'esnext.set.union.v2': {
   },
