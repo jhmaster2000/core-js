@@ -52,7 +52,7 @@ var dedentTemplateStringsArray = function (template) {
   var raw = dedentStringsArray(rawInput);
   var cookedArr = cookStrings(raw);
   defineProperty(cookedArr, 'raw', {
-    value: freeze(raw)
+    value: freeze(raw),
   });
   freeze(cookedArr);
   globalDedentRegistry.set(rawInput, cookedArr);
@@ -153,5 +153,5 @@ $({ target: 'String', stat: true, forced: true }, {
     anObject(templateOrFn);
     if (isCallable(templateOrFn)) return makeDedentTag(templateOrFn);
     return apply(cookedDedentTag, this, arguments);
-  }
+  },
 });

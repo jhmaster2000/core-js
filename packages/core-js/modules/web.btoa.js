@@ -43,5 +43,5 @@ $({ global: true, bind: true, enumerable: true, forced: NO_ARG_RECEIVING_CHECK |
       block = block << 8 | charCode;
       output += charAt(map, 63 & block >> 8 - position % 1 * 8);
     } return output;
-  }
+  },
 });
