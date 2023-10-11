@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/prefer-top-level-await -- false positive */
 import semver from 'semver';
 
 const { coerce, cmp } = semver;
@@ -17,10 +18,9 @@ async function getStat(pkg) {
 
 const [core, pure, bundle] = await Promise.all([
   getStat('core-js'),
-  // eslint-disable-next-line unicorn/prefer-top-level-await -- false positive
   ALL && getStat('core-js-pure'),
-  // eslint-disable-next-line unicorn/prefer-top-level-await -- false positive
   ALL && getStat('core-js-bundle'),
+  ALL && getStat('@core-js/bundle'),
 ]);
 
 for (let [patch, downloads] of Object.entries(core)) {
