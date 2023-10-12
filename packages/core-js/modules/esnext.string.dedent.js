@@ -9,7 +9,6 @@ var anObject = require('../internals/an-object');
 var toObject = require('../internals/to-object');
 var isCallable = require('../internals/is-callable');
 var lengthOfArrayLike = require('../internals/length-of-array-like');
-var defineProperty = require('../internals/object-define-property').f;
 var createArrayFromList = require('../internals/array-slice-simple');
 var cooked = require('../internals/string-cooked');
 var parse = require('../internals/string-parse');
@@ -26,6 +25,7 @@ globalDedentRegistry.set = globalDedentRegistry.set;
 
 var $Array = Array;
 var $TypeError = TypeError;
+var defineProperty = Object.defineProperty;
 var freeze = Object.freeze;
 // eslint-disable-next-line es/no-object-isfrozen -- safe
 var isFrozen = Object.isFrozen;
