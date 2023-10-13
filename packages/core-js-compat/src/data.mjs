@@ -1971,12 +1971,6 @@ export const data = {
     chrome: '117',
     firefox: '119',
   },
-  'esnext.observable.constructor': {
-  },
-  'esnext.observable.from': {
-  },
-  'esnext.observable.of': {
-  },
   'esnext.promise.with-resolvers': {
     bun: '0.7.1',
     chrome: '119',
@@ -2072,8 +2066,6 @@ export const data = {
   'esnext.symbol.matcher': {
   },
   'esnext.symbol.metadata': {
-  },
-  'esnext.symbol.observable': {
   },
   'esnext.typed-array.filter-reject': {
   },
