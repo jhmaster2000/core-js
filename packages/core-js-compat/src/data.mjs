@@ -1975,33 +1975,6 @@ export const data = {
     bun: '0.7.1',
     chrome: '119',
   },
-  // TODO: Remove from `core-js@4`
-  'esnext.reflect.define-metadata': {
-  },
-  // TODO: Remove from `core-js@4`
-  'esnext.reflect.delete-metadata': {
-  },
-  // TODO: Remove from `core-js@4`
-  'esnext.reflect.get-metadata': {
-  },
-  // TODO: Remove from `core-js@4`
-  'esnext.reflect.get-metadata-keys': {
-  },
-  // TODO: Remove from `core-js@4`
-  'esnext.reflect.get-own-metadata': {
-  },
-  // TODO: Remove from `core-js@4`
-  'esnext.reflect.get-own-metadata-keys': {
-  },
-  // TODO: Remove from `core-js@4`
-  'esnext.reflect.has-metadata': {
-  },
-  // TODO: Remove from `core-js@4`
-  'esnext.reflect.has-own-metadata': {
-  },
-  // TODO: Remove from `core-js@4`
-  'esnext.reflect.metadata': {
-  },
   'esnext.regexp.escape': {
   },
   'esnext.set.add-all': {
