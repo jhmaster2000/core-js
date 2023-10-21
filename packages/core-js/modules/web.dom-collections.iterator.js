@@ -1,14 +1,14 @@
 'use strict';
 var global = require('../internals/global');
+var getBuiltInPrototypeMethod = require('../internals/get-built-in-prototype-method');
 var DOMIterables = require('../internals/dom-iterables');
 var DOMTokenListPrototype = require('../internals/dom-token-list-prototype');
-var ArrayIteratorMethods = require('../modules/es.array.iterator');
 var createNonEnumerableProperty = require('../internals/create-non-enumerable-property');
 var wellKnownSymbol = require('../internals/well-known-symbol');
 
 var ITERATOR = wellKnownSymbol('iterator');
 var TO_STRING_TAG = wellKnownSymbol('toStringTag');
-var ArrayValues = ArrayIteratorMethods.values;
+var ArrayValues = getBuiltInPrototypeMethod('Array', 'values');
 
 var handlePrototype = function (CollectionPrototype, COLLECTION_NAME) {
   if (CollectionPrototype) {
@@ -21,14 +21,15 @@ var handlePrototype = function (CollectionPrototype, COLLECTION_NAME) {
     if (!CollectionPrototype[TO_STRING_TAG]) {
       createNonEnumerableProperty(CollectionPrototype, TO_STRING_TAG, COLLECTION_NAME);
     }
-    if (DOMIterables[COLLECTION_NAME]) for (var METHOD_NAME in ArrayIteratorMethods) {
+    if (DOMIterables[COLLECTION_NAME]) ['entries', 'keys', 'values'].forEach(function (METHOD_NAME) {
+      var method = getBuiltInPrototypeMethod('Array', METHOD_NAME);
       // some Chrome versions have non-configurable methods on DOMTokenList
-      if (CollectionPrototype[METHOD_NAME] !== ArrayIteratorMethods[METHOD_NAME]) try {
-        createNonEnumerableProperty(CollectionPrototype, METHOD_NAME, ArrayIteratorMethods[METHOD_NAME]);
+      if (CollectionPrototype[METHOD_NAME] !== method) try {
+        createNonEnumerableProperty(CollectionPrototype, METHOD_NAME, method);
       } catch (error) {
-        CollectionPrototype[METHOD_NAME] = ArrayIteratorMethods[METHOD_NAME];
+        CollectionPrototype[METHOD_NAME] = method;
       }
-    }
+    });
   }
 };
 
