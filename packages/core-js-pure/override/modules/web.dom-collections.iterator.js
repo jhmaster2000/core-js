@@ -8,6 +8,7 @@ var Iterators = require('../internals/iterators');
 var wellKnownSymbol = require('../internals/well-known-symbol');
 
 var TO_STRING_TAG = wellKnownSymbol('toStringTag');
+// dependency: es.array.iterator
 var ArrayValues = getBuiltInPrototypeMethod('Array', 'values');
 
 for (var COLLECTION_NAME in DOMIterables) {

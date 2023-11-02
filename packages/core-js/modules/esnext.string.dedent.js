@@ -14,6 +14,7 @@ var cooked = require('../internals/string-cooked');
 var parse = require('../internals/string-parse');
 var whitespaces = require('../internals/whitespaces');
 
+// dependency: es.weak-map.constructor
 var WeakMap = getBuiltIn('WeakMap');
 var globalDedentRegistry = shared('GlobalDedentRegistry', new WeakMap());
 
